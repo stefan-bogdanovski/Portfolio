@@ -1,0 +1,171 @@
+@media screen and (min-width: 905px) {
+  #logo {
+    font-size: 25px; }
+
+  #sliderText h2 {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 5em;
+    font-family: Nunito Sans; }
+  #sliderText h3 {
+    font-size: 4em; } }
+@media screen and (max-width: 904px) {
+  #slider, #rgbaCover {
+    min-height: 600px; }
+
+  #logo {
+    float: none;
+    width: 100%; }
+    #logo h1 {
+      margin: 30px 0px; }
+
+  header nav {
+    width: 100%;
+    float: none;
+    margin: 0px auto; }
+
+  header nav ul li {
+    width: 33%;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    text-align: center;
+    font-weight: bold; }
+
+  #prviDeo {
+    width: 100%;
+    display: block; }
+
+  .skills {
+    width: 45%; }
+
+  #project #opis h6 {
+    font-size: 2em; }
+
+  #project #opis p {
+    font-size: 25px; }
+
+  #project #opis .link a {
+    font-size: 1em; } }
+@media screen and (max-width: 780px) {
+  #footerCenter {
+    flex-direction: column;
+    align-content: center; }
+
+  #files h6 {
+    text-align: center; }
+
+  #files ul li {
+    text-align: center; }
+
+  #copyright {
+    order: 3; }
+    #copyright h6 {
+      font-size: 22px;
+      margin: 30px 0px -5px 0px; } }
+@media screen and (max-width: 525px) {
+  #slider, #rgbaCover {
+    min-height: 500px; }
+
+  #sliderText h2 {
+    font-size: 2em; }
+
+  #profil {
+    width: 150px;
+    height: 150px; }
+
+  #sliderText h3 {
+    font-size: 30px; }
+
+  header nav ul li {
+    margin: 10px 0px; }
+
+  #sliderText p {
+    font-weight: bold; }
+
+  #aboutText p {
+    font-size: 20px; }
+  #aboutText h4 {
+    font-size: 30px;
+    text-align: center;
+    padding: 25px; }
+
+  .skills {
+    width: 90%; }
+
+  #project #opis h6 {
+    font-size: 25px; }
+
+  #project #opis p {
+    font-size: 22px; }
+
+  #contactCenter h6 {
+    font-size: 2em; }
+
+  #contactCenter form input {
+    font-size: 16px; }
+    #contactCenter form input::placeholder {
+      font-size: 15px !important; }
+
+  #contactCenter form textarea {
+    font-size: 16px; }
+    #contactCenter form textarea::placeholder {
+      font-size: 15px !important; }
+
+  #contactCenter .dugme {
+    width: 100%; }
+
+  #copyright h6 {
+    font-size: 16px; } }
+@media screen and (max-width: 303px) {
+  #profil {
+    width: 100px;
+    height: 100px; }
+
+  #project #opis .link a {
+    font-size: 10px; }
+
+  #logo h1 {
+    font-size: 18px; }
+
+  #sliderText h2 {
+    font-size: 22px;
+    margin-top: 30px; }
+
+  header nav ul li {
+    width: 100%; }
+
+  #slider, #rgbaCover {
+    min-height: 560px; }
+
+  #sliderText h3 {
+    font-size: 20px; }
+
+  #sliderText p {
+    font-size: 15px; }
+
+  #aboutText p {
+    font-size: 18px; }
+  #aboutText h4 {
+    font-size: 23px; }
+
+  #naslovSkills h5 {
+    font-size: 25px; }
+
+  .skills h6 {
+    font-size: 16px; }
+
+  #contactCenter h6 {
+    font-size: 1.5em; }
+
+  #contactCenter form input {
+    font-size: 10px; }
+    #contactCenter form input::placeholder {
+      font-size: 8px !important; }
+
+  #contactCenter form textarea {
+    font-size: 10px; }
+    #contactCenter form textarea::placeholder {
+      font-size: 12px !important; } }
+
+/*# sourceMappingURL=responsive.css.map */

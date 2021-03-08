@@ -1,0 +1,367 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans|Pacifico|Acme|Lobster&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Nunito Sans; }
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden; }
+
+@keyframes logo {
+  from {
+    left: -50px;
+    top: -50px; }
+  to {
+    left: 0px;
+    top: 0px; } }
+@keyframes text {
+  from {
+    right: -1200px; }
+  to {
+    right: 0px;
+    top: 0px; } }
+a {
+  text-decoration: none;
+  color: #000; }
+
+ul {
+  list-style-type: none; }
+
+.cistac {
+  clear: both; }
+
+#slider {
+  background-image: url("../images/slider.jpg");
+  min-height: 700px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  position: relative;
+  background-size: cover; }
+
+#rgbaCover {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  min-height: 700px;
+  width: 100%; }
+
+header {
+  min-height: 80px;
+  width: 100%; }
+
+#logo {
+  float: left;
+  width: 37%;
+  position: relative;
+  animation-name: logo;
+  animation-duration: 2.5s;
+  animation-fill-mode: both;
+  display: flex;
+  justify-content: center; }
+  #logo h1 {
+    font-size: 1.8em;
+    margin-top: 15px;
+    color: #d9534f;
+    font-family: Lobster;
+    text-align: center; }
+
+header nav {
+  float: right; }
+
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+  header nav ul li {
+    padding: 15px;
+    font-family: Nunito Sans;
+    text-transform: uppercase;
+    border-right: 1px solid #d9534f; }
+    header nav ul li a:hover {
+      color: #fff; }
+
+header nav ul li:last-child {
+  border: none; }
+
+header nav {
+  margin: 10px 30px 0px 0px; }
+
+header ul li a {
+  color: #d9534f;
+  margin: 0px 10px;
+  font-weight: 800; }
+
+#sliderText h2 {
+  margin-top: 25px;
+  color: rgba(222, 222, 222, 0.9);
+  text-align: center;
+  font-size: 3em;
+  font-family: Nunito Sans; }
+
+#sliderText p {
+  text-align: center;
+  font-size: 35px;
+  color: #d9534f;
+  font-weight: bold; }
+#sliderText h3 {
+  color: #d9534f;
+  text-align: center;
+  font-size: 3em;
+  position: relative;
+  animation-name: text;
+  animation-duration: 2.5s;
+  animation-fill-mode: both; }
+
+#sliderText p {
+  display: block;
+  font-family: Nunito Sans;
+  font-size: 40px;
+  color: #fff;
+  margin: 20px 0px; }
+
+h4 {
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center; }
+
+#profil {
+  border-radius: 50%;
+  background-image: url("../images/profil.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  margin: 0px auto; }
+
+#about {
+  padding-bottom: 30px;
+  background-color: rgba(0, 0, 0, 0.1); }
+
+#justify {
+  display: block;
+  text-align: justify;
+  text-align-last: center; }
+
+#aboutText {
+  width: 80%;
+  margin: 0px auto; }
+  #aboutText p {
+    text-align: center;
+    font-size: 25px; }
+  #aboutText h4 {
+    font-size: 40px;
+    text-align: center;
+    padding: 25px; }
+
+#naslovSkills h5 {
+  font-size: 40px;
+  text-align: center;
+  color: #d9534f;
+  margin: 30px 0px; }
+
+#Skills {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap; }
+
+.skills {
+  width: 22%;
+  height: 80%;
+  margin-top: 10px;
+  border: 2px solid #d9534f;
+  border-radius: 5px;
+  text-align: center; }
+  .skills h6 {
+    font-size: 25px;
+    border-bottom: 1px solid #d9534f;
+    text-transform: uppercase; }
+    .skills h6 .fa-html5, .skills h6 .fa-css3-alt, .skills h6 .fa-bootstrap, .skills h6 .fa-cog {
+      color: #d9534f;
+      font-size: 20px; }
+  .skills p {
+    text-align-last: center;
+    word-wrap: break-word;
+    width: 90%;
+    font-size: 18px; }
+
+.centar {
+  margin-left: 10%;
+  padding: 10px 0px; }
+
+#project {
+  width: 100%;
+  min-height: fit-content;
+  background: url("../images/projectBackground.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-top: 100px;
+  padding-bottom: 50px;
+  position: relative;
+  display: flex;
+  justify-content: center; }
+  #project #opis {
+    width: 70%;
+    height: 100%; }
+    #project #opis h6 {
+      font-size: 3em;
+      text-align: center;
+      color: #d9534f;
+      margin: 40px 0px; }
+    #project #opis p {
+      font-size: 2em;
+      text-align: justify;
+      text-align-last: center;
+      color: #fff; }
+    #project #opis .link {
+      display: block;
+      text-align: center;
+      width: 100%; }
+      #project #opis .link a {
+        color: #fff;
+        font-size: 25px;
+        text-transform: uppercase;
+        display: block;
+        width: 100%;
+        border: 2px solid #fff;
+        border-radius: 5px;
+        padding: 15px 0px;
+        font-family: 'Acme', sans-serif;
+        margin-bottom: 15px; }
+      #project #opis .link a:hover {
+        color: #d9534f;
+        background-color: #fff; }
+
+#contact {
+  width: 100%;
+  min-height: 600px;
+  background-image: linear-gradient(to bottom right, #777, #ddd);
+  display: flex;
+  justify-content: center; }
+
+#drzac {
+  width: 100%;
+  display: flex;
+  height: fit-content;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 25px; }
+
+#contactCenter {
+  width: 70%;
+  height: inherit; }
+  #contactCenter h6 {
+    text-align: center;
+    margin: 20px 0px;
+    font-size: 3em;
+    color: #d9534f; }
+  #contactCenter form {
+    width: 100%;
+    height: fit-content; }
+    #contactCenter form input {
+      width: 100%;
+      padding: 10px;
+      border: 0;
+      background-color: transparent;
+      border-bottom: 2px solid #d9534f;
+      -webkit-appearance: none;
+      outline: none;
+      font-size: 2em;
+      margin: 10px 0px; }
+      #contactCenter form input:-webkit-autofill, #contactCenter form input -webkit-autofill-:hover, #contactCenter form input -webkit-autofill-:active, #contactCenter form input -webkit-autofill-:focus {
+        box-shadow: 0 0 0 30px #dedede inset !important;
+        border-radius: 15px !important;
+        border: 2px solid #d9534f; }
+      #contactCenter form input::-webkit-input-placeholder {
+        font-size: 25px !important;
+        line-height: 1;
+        color: #fff;
+        font-family: Nunito Sans;
+        font-size: 22px; }
+      #contactCenter form input:focus {
+        border: 1px solid #d9534f;
+        border-radius: 15px; }
+    #contactCenter form textarea {
+      min-width: 100%;
+      max-width: 100%;
+      min-height: 200px;
+      max-height: fit-content;
+      font-size: 2em;
+      padding: 5px;
+      outline: none;
+      background-color: transparent;
+      border: 2px solid #d9534f;
+      margin-top: 20px;
+      border-radius: 15px;
+      margin-bottom: 20px; }
+      #contactCenter form textarea::placeholder {
+        font-size: 25px !important;
+        color: #fff;
+        padding: 5px;
+        overflow-y: hidden; }
+  #contactCenter .dugme {
+    width: 49%;
+    padding: 10px 0px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 15px;
+    border: 2px solid #d9534f;
+    font-size: 1.5em;
+    -webkit-appearance: none;
+    outline: none; }
+
+footer {
+  width: 100%;
+  height: fit-content;
+  background-color: #000;
+  color: #fff;
+  padding-bottom: 20px; }
+
+#footerCenter {
+  width: 80%;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+
+#copyright h6 {
+  font-size: 22px;
+  margin: 60px 0px -5px 0px;
+  text-align: center; }
+
+#Dmreze {
+  text-align: center; }
+  #Dmreze ul {
+    display: flex;
+    justify-content: center; }
+    #Dmreze ul li
+    a {
+      color: #fff;
+      font-size: 24px;
+      margin: 5px; }
+      #Dmreze ul li
+      a:hover {
+        color: #d9534f; }
+
+#Dmreze h6, #files h6 {
+  font-size: 22px;
+  margin: 30px 0px -5px 0px;
+  color: #d9534f; }
+
+#files {
+  display: flex;
+  flex-direction: column; }
+
+#files ul li a {
+  color: #fff;
+  width: 100%; }
+  #files ul li a:hover {
+    color: #d9534f; }
+
+/*# sourceMappingURL=style.css.map */

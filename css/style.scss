@@ -1,0 +1,416 @@
+$bela: #fff;
+$belatransparent:  rgba(222,222,222, 0.9);
+$fontobican: Nunito Sans;
+$crvenkasta: #d9534f;
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans|Pacifico|Acme|Lobster&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing:border-box;
+    font-family: $fontobican;
+}
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+@keyframes logo{
+    from {left: -50px; top: -50px;}
+    to {left: 0px; top: 0px;}
+    
+}
+@keyframes text{
+    from{right: -1200px;}
+    to {right: 0px; top:0px;}
+
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+ul{
+    list-style-type: none;
+}
+.cistac{
+    clear: both;
+}
+#slider {
+    background-image: url("../images/slider.jpg");
+    min-height: 700px;
+    background-repeat: no-repeat;
+    background-position: center;
+    width:100%;
+    position: relative;
+    background-size: cover;
+}
+#rgbaCover{
+    position:absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    min-height: 700px;
+    width: 100%;
+}
+header{
+    min-height: 80px;
+    width:100%;
+}
+#logo {
+    float: left;
+    width: 37%;
+    position: relative;
+	animation-name: logo;
+	animation-duration: 2.5s;
+    animation-fill-mode: both;
+    display: flex;
+    justify-content: center;
+    h1 {
+        font-size: 1.8em;
+        margin-top: 15px;
+        color: $crvenkasta;
+        font-family: Lobster;
+        text-align: center;
+    }
+    
+}
+header nav{
+    float: right;
+}
+header nav ul
+    {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    li {
+        padding: 15px;
+        font-family: $fontobican;
+        text-transform: uppercase;
+        border-right: 1px solid $crvenkasta;
+            a:hover{
+            color: $bela;
+        }   
+    }    
+}
+header nav ul li:last-child{
+    border: none;
+}
+header nav{
+    margin: 10px 30px 0px 0px;
+}
+
+header ul li a{
+     color: $crvenkasta;
+     margin: 0px 10px;
+     font-weight: 800;
+}
+#sliderText{
+         h2{
+            margin-top: 25px;
+            color: $belatransparent;
+            text-align: center;
+                font : {
+                    size: 3em;
+                    family: $fontobican;
+                    } 
+            }
+}
+#sliderText{
+    p{
+        text-align: center;
+        font-size: 35px;
+        color: $crvenkasta;
+        font-weight: bold;
+    }
+    h3{ 
+        color: $crvenkasta;
+        text-align: center;
+        font-size: 3em;
+        position: relative;
+        animation-name: text;
+        animation-duration: 2.5s;
+        animation-fill-mode: both;
+        
+    }
+}
+#sliderText p {
+    display: block;
+    font-family: $fontobican;
+    font-size: 40px;
+    color: $bela;
+    margin: 20px 0px;
+}
+h4{
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+}
+#profil{
+    border-radius: 50%;
+    background-image: url("../images/profil.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width:200px;
+    height: 200px;
+    margin: 0px auto;
+}
+
+//Zavrsen heder i slajder
+#about {
+    padding-bottom: 30px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+#justify{
+    display: block;
+    text-align: justify;
+    text-align-last: center;
+}
+#aboutText {
+    width: 80%;
+    p{
+    text-align: center;
+    font-size: 25px;
+    }
+    h4{
+        font-size: 40px;
+        text-align: center;
+        padding: 25px;
+    }
+    margin:0px auto;
+}
+//Zavrsen sivi blok
+#naslovSkills{
+    h5{
+        font-size: 40px;
+        text-align: center;
+        color: $crvenkasta;
+        margin: 30px 0px;
+    }
+}
+#Skills {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.skills{
+    width: 22%;
+    height: 80%;
+    margin-top: 10px;
+    border: 2px solid $crvenkasta;
+    border-radius: 5px;
+    text-align: center;
+    h6 {
+        font-size: 25px;
+        border-bottom: 1px solid $crvenkasta;
+        text-transform: uppercase;
+        .fa-html5, .fa-css3-alt, .fa-bootstrap, .fa-cog{
+            color: $crvenkasta;
+            font-size: 20px;
+        }
+    }
+    p{
+        text-align-last: center;
+        word-wrap: break-word;
+        width:90%;
+        font-size: 18px;
+    }
+}
+.centar {
+    margin-left: 10%;
+    padding: 10px 0px;
+}
+//zavrsen skills
+#project {
+    width:100%;
+    min-height: fit-content;
+    background: url("../images/projectBackground.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 100px;
+    padding-bottom: 50px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    #opis {
+        width: 70%;
+        height:100%;
+                h6{
+                font-size: 3em;
+                text-align: center;
+                color: $crvenkasta;
+                margin: 40px 0px;
+                }
+                 p{
+                font-size: 2em;
+                text-align: justify;
+                text-align-last: center;
+                color: $bela;
+                }
+                .link{
+                display: block;
+                text-align: center;
+                width: 100%;
+                a{
+                    color: $bela;
+                    font-size: 25px;
+                    text-transform: uppercase;
+                    display: block;
+                    width: 100%;
+                    border: 2px solid $bela;
+                    border-radius: 5px;
+                    padding: 15px 0px;
+                    font-family: 'Acme', sans-serif;
+                    margin-bottom: 15px;
+                }
+                a:hover{
+                    color: $crvenkasta;
+                    background-color: $bela;
+            }
+        }
+    }
+}
+//zavrseni projekti
+#contact {
+    width: 100%;
+    min-height: 600px;
+    background-image: linear-gradient(to bottom right, #777, #ddd);
+    display: flex;
+    justify-content: center;
+}
+#drzac {
+    width: 100%;
+    display:flex;
+    height: fit-content;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+#contactCenter{
+    width:70%;
+    height: inherit;
+    h6{
+        text-align: center;
+        margin: 20px 0px;
+        font-size: 3em;
+        color: $crvenkasta;    
+    }
+    form {
+        width: 100%;
+        height: fit-content;
+        input {
+            &:-webkit-autofill, -webkit-autofill-:hover, -webkit-autofill-:active, -webkit-autofill-:focus {
+                box-shadow: 0 0 0 30px rgba(222, 222, 222, 1)  inset !important;
+                border-radius: 15px !important;
+                border: 2px solid $crvenkasta;
+            }
+            width: 100%;
+            padding: 10px;
+            border: 0;
+            background-color: transparent;
+            border-bottom: 2px solid $crvenkasta;
+            -webkit-appearance: none;
+            outline: none;
+            font-size: 2em;
+            margin: 10px 0px;
+            &::-webkit-input-placeholder {
+                font-size: 25px !important;
+                line-height: 1;
+                color: $bela;
+                font-family: $fontobican;
+                font-size: 22px;    
+            }
+            &:focus{
+                border: 1px solid $crvenkasta;
+                border-radius: 15px;
+            }
+        }
+        textarea{
+            min-width: 100%;
+            max-width:100%;
+            min-height: 200px;
+            max-height: fit-content;
+            font-size: 2em;
+            padding: 5px;
+            outline:none;
+            background-color: transparent;
+            border: 2px solid $crvenkasta;
+            margin-top: 20px;
+            border-radius: 15px;
+            &::placeholder{
+                font-size: 25px !important;
+                color: $bela;
+                padding: 5px;
+                overflow-y: hidden;
+            }
+            margin-bottom: 20px;
+        }
+    }
+    .dugme {
+        width:49%;
+        padding: 10px 0px;
+        margin-bottom: 20px;
+        background-color: transparent;
+        color: $bela;
+        border-radius: 15px;
+        border: 2px solid $crvenkasta;
+        font-size: 1.5em;
+        -webkit-appearance: none;
+        outline: none;
+    }
+}
+//Zavrsena forma
+footer{
+    width: 100%;
+    height: fit-content;
+    background-color: #000;
+    color: #fff;
+    padding-bottom: 20px;
+}
+#footerCenter{
+    width: 80%;
+    margin:0px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#copyright h6{
+    font-size: 22px;
+    margin: 60px 0px -5px 0px;
+    text-align: center;
+}
+#Dmreze{
+    text-align: center;
+ul{
+        display: flex;
+        justify-content: center;
+        li
+         a{
+            color: $bela;
+            font-size: 24px;
+            margin: 5px;
+                 &:hover{
+                        color: $crvenkasta;
+                        }
+            }
+    }
+}
+#Dmreze h6, #files h6{
+     font-size: 22px;
+     margin: 30px 0px -5px 0px;
+     color: $crvenkasta;
+}
+#files {
+    display: flex;
+    flex-direction: column;
+}
+#files ul li{
+    
+    a{
+        color: #fff;
+        width: 100%;
+        &:hover{
+            color: $crvenkasta;
+        }
+    }
+}
